@@ -20,8 +20,10 @@ public class Infomation extends HttpServlet {
 		//input 태그로 넘어온 데이터
 		//요청일 때는 무조건 request object
 		response.setContentType("text/html;charset-utf-8");
+		
 		String name = request.getParameter("Name");
 		String address = request.getParameter("Address");
+		
 		PrintWriter out = response.getWriter();
 		out.println("<html><body>");
 		out.printf("<h3>%s 님은 %s에 사십니다.</h3>", name, address);
@@ -31,6 +33,7 @@ public class Infomation extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//Call doGet
 		doGet(request, response);
 	}
 
