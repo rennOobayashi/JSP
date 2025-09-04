@@ -13,6 +13,6 @@
 		String address = request.getParameter("Address");
 	%>
 	
-	<h3><%=name %> is living <%=address %> now.</h3>
+	<h3> <%=name %> is living <%=address %>. </h3>
 </body>
 </html>
