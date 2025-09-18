@@ -8,22 +8,7 @@
 </head>
 <body>
 	<h2>Login Result</h2>
-	<%
-		String ID = request.getParameter("ID");
-		String password = request.getParameter("Password");
-		
-		if (ID.equals("admin")) {
-			if (password.equals("1234")) {
-				out.println("Welcome " + ID + "!");
-			}
-			else {
-				out.println("Wrong password.");
-			}
-		}
-		else {
-			out.println("Access out");
-		}
-	%>
+	<h3> <%= request.getAttribute("msg") %> </h3>
 	<br><br>
 	
 	<form action="LoginForm.jsp">
