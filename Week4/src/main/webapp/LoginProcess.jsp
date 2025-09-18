@@ -25,13 +25,9 @@
 			message = "Access out";
 		}
 		
-		request.setAttribute(message, "msg");
+		request.setAttribute("msg", message);
 	%>
-	
-	<%= ID %> <br>
-	<%= password %>
-	<%= message %>
-	
+
 	<jsp:forward page="LoginResult.jsp" />
 </body>
 </html>
