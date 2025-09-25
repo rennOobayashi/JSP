@@ -25,7 +25,7 @@
 			message = "Access out";
 		}
 		
-		request.setAttribute(message, "msg");
+		request.setAttribute("msg", message);
 	%>
 	
 	<%= ID %> <br>
