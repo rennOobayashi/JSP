@@ -16,17 +16,18 @@ public class MyController {
 	// /test1 Response
 	@RequestMapping("/test1")
 	public String test1() {
-		
-		return "/WEB-INF/views/test1.jsp";
+		//prefix : /WEB-INF/views/
+		//suffix: .jsp
+		return "test1";
 	}
 	
 	@RequestMapping("/test2")
 	public String test2() {
-		return "/WEB-INF/views/test2.jsp";
+		return "test2";
 	}
 	
 	@RequestMapping("/test3")
 	public String test3() {
-		return "/WEB-INF/views/sub/test3.jsp";
+		return "sub/test3";
 	}
 }
