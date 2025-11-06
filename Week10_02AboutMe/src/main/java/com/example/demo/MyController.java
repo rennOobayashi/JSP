@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class MyController {
 	@RequestMapping("/")
-	@ResponseBody
 	public String main() {
-		return "Hello world!";
+		//return view page 
+		return "index";
 	}
 	
 	@RequestMapping("/name")

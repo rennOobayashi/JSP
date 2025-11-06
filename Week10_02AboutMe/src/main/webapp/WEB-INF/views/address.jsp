@@ -8,5 +8,6 @@
 </head>
 <body>
 	<h2>address: soeul</h2>
+	<img alt="house" src="image/house.png">
 </body>
 </html>

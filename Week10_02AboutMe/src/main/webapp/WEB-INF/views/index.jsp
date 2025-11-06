@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h2>major: Software</h2>
-	<img alt="ai" src="image/ai.jpg">
+	<h2>About Me</h2>
+	<button onclick="location.href='/name'">Start</button>
 </body>
 </html>

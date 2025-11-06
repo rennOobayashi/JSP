@@ -8,5 +8,6 @@
 </head>
 <body>
 	<h2>Name: Lee Inhee</h2>
+	<img alt="ai" src="/image/springboot.png">
 </body>
 </html>
