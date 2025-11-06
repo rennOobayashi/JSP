@@ -7,7 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h2>Ur name is ${ name }, age is ${ age }</h2>
-	
+
 </body>
 </html>

@@ -8,12 +8,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-	
 	<h2>Ur name is ${ name }, age is ${ age }</h2>
 	<h2> ${ lists }</h2>
 	<ul>
 		<c:forEach var="myList" items="${ lists }">
-			${ myList }
+			<li>${ myList } </li>
 		</c:forEach>
 	</ul>
 </body>
