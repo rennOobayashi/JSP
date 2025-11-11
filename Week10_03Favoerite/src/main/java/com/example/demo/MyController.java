@@ -9,7 +9,7 @@ public class MyController {
 	public String root() {
 		return "index";
 	}
-
+	
 	@RequestMapping("/music")
 	public String music() {
 		return "music";
