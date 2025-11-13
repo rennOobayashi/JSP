@@ -50,4 +50,10 @@ public class MyController {
 		return "test3";
 	}
 	
+	//use Command
+	@GetMapping("/test4")
+	public String tset4(Member member) {
+		//Generate bean object equal input parameter
+		return "test4";
+	}
 }
