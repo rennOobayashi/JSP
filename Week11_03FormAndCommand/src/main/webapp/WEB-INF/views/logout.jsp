@@ -6,12 +6,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Hello ${ name }!</h1>
-	<h2>id : ${ id }</h2>
-	
-	<details>
-		<summary>View password</summary>
-		<h4>password : ${ pw }</h4>
-	</details>
+	<script type="text/javascript">
+	if (confirm("sure?")) {
+		location.href = "/";
+	}
+	</script>
 </body>
 </html>

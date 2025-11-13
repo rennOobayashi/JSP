@@ -4,7 +4,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class MyController {
@@ -19,11 +18,12 @@ public class MyController {
 	}
 	
 	@GetMapping("/result")
-	public String result(@RequestParam("name") String name,@RequestParam("id") String id, @RequestParam("pw") String pw,  Model model) {
-		model.addAttribute("id", id);
-		model.addAttribute("name", name);
-		model.addAttribute("pw", pw);
-		
+	public String result(MemberInfo memberInfo) {		
 		return "result";
+	}
+	
+	@GetMapping("/logout")
+	public String logout(MemberInfo memberInfo) {
+		return "logout";
 	}
 }
