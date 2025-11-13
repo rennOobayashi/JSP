@@ -7,7 +7,11 @@
 </head>
 <body>
 	<h2>login</h2>
-	ID : <input type="text" name="id"> <br>
-	Name : <input type="text" name="name"> <br>
+	<form action="result">
+		Name : <input type="text" name="name"> <br>
+		ID : <input type="text" name="id"> <br>
+		Password: <input type="password" name="pw"> <br>
+		<input type="submit" value="submit">
+	</form>
 </body>
 </html>
