@@ -9,13 +9,11 @@ import com.example.demo.entity.Member;
 @Controller
 public class MemberController {
 
-    private final Week1202JpAdemoApplication week1202JpAdemoApplication;
 	//Use Repository for DB connect
 	private MemberRepository memberRepository;
 	
-	public MemberController(MemberRepository memberRepository, Week1202JpAdemoApplication week1202JpAdemoApplication) {
+	public MemberController(MemberRepository memberRepository) {
 		this.memberRepository = memberRepository;
-		this.week1202JpAdemoApplication = week1202JpAdemoApplication;
 	}
 	
 	@GetMapping("/insert")
