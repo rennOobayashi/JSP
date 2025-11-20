@@ -3,7 +3,9 @@ package com.example.demo.entity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import lombok.Data;
 
+@Data
 @Entity //DB Table
 public class Member {
 	@Id
