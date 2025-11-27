@@ -10,7 +10,7 @@
 	<h2>Update Question</h2>
 	
 	<form action="/question/update/${ question.id }"> 
-		Title : <input type="text" name="subject" value="${ question.id }"> <br>
+		Title : <input type="text" name="subject" value="${ question.subject }"> <br>
 		Content : <textarea rows="5" cols="40" name="content"> ${ question.content } </textarea>
 		<br>
 		<br>

@@ -26,9 +26,6 @@
 			</tr>
 		</c:forEach>
 	</table>
-	
-	<button onclick="location.href='/question/insertForm'">Regist</button>
-	
 	<button onclick="location.href='insertForm'">Back to Register</button>
 </body>
 </html>

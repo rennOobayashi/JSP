@@ -64,7 +64,7 @@ public class QuestController {
 		q.setSubject(question.getSubject());
 		q.setContent(question.getContent());
 		qService.insert(q);
-		return "redirect:/qusetion/viewList";
+		return "redirect:/question/viewList";
 	}
 	
 	@GetMapping("/deleteForm/{id}")
@@ -76,6 +76,6 @@ public class QuestController {
 	@GetMapping("/delete/{id}")
 	public String delete(@PathVariable("id") int id) {
 		qService.delete(id);
-		return "redirect:/viewList";
+		return "redirect:/question/viewList";
 	}
 }
