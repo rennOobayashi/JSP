@@ -20,7 +20,12 @@
 		<c:forEach var="q" items="${list}">
 			<tr>
 				<td> ${ q.id } </td>
-				<td> <a href="/question/detail/${q.id}">${ q.subject } </a> </td>
+				<td> 
+					<a href="/question/detail/${q.id}">${ q.subject } </a> 
+					<c:if test="${ q.answerList.size() > 0 }">
+						<span style="color: red; font-size=14;"> ( ${ q.answerList.size() } ) </span>
+					</c:if>
+				</td>
 				
 				<td> <fmt:formatDate value="${ q.createDate }" type="date" pattern="yyyy-MM-dd" /> </td>
 			</tr>
