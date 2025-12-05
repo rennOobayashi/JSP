@@ -24,6 +24,11 @@ public class MainController {
 	@RequestMapping("/viewList")
 	public String viewList(Model model) {
 		List<Information> informations = iService.selectAll();
+		
+		if (informations == null) {
+			return "information/insertForm";
+		}
+		
 		model.addAttribute("information", informations);
 		
 		return "viewList";

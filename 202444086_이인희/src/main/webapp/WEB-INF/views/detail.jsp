@@ -9,30 +9,20 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h2>content detail</h2>
-	
-	title : ${question.subject } <br>
-	content : ${ question.content } <br>
-	createDate : <fmt:formatDate value="${ question.createDate }" type="date" pattern="yyyy-MM-dd" /> <br>
-	<c:if test="${ question.answerList.size() > 0}">
-		<h4>Have ${ question.answerList.size() } Answers!</h4>
-		<div>
-			<ul>
-				<c:forEach var="answer" items="${ question.answerList }">
-					<li> ${ answer.content }</li>
-				</c:forEach>
-			</ul>
-		</div>
-	</c:if>
-	
-	<form action="/answer/insert/${ question.id }">
-		<textarea rows="5" cols="40" name="content" required="required"></textarea> <br>
-		<input type="submit" value="Regist Answer">
+	<form action="/infoDetails/insert/${ information.id }/${ subTitle }">
+		<h2>${ subTitle }</h2>
+		<hr>
+		내용 : <br>
+		<textarea rows="5" cols="40" name="content" required="required">${ not empty information.details.content ? information.details.content : "None" }</textarea> <br>
+		<c:if test="${ empty information.details.content }">
+			<input class="btn btn-primary" type="submit" value="내용 등록">
+		</c:if>
+		<c:if test="${ not empty information.details.content }">
+			<input class="btn btn-primary" type="submit" value="내용 수정">
+		</c:if>
 	</form>
 	<br>
 	<br>
-	<button onclick="location.href='/question/updateForm/${question.id}'">Update</button>
-	<button onclick="location.href='/question/deleteForm/${question.id}'">Delete</button>
-	<button onclick="location.href='/question/viewList'">viewList</button>
+	<button class="btn btn-primary" style="margin-left: 10px" onclick="location.href='/viewList'">목록</button>
 </body>
 </html>

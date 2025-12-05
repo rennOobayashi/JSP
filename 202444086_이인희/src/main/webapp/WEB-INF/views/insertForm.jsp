@@ -18,16 +18,16 @@
 			</div>
 			<div class="input-group input-group-sm mb-3">
 				<span class="input-group-text" id="inputGroup-sizing-sm">소제목</span>
-				<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name="subTitle1">
+				<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name="subTitles">
 			</div>
 			<div id="passwordHelpBlock" class="form-text" style="margin-left: 10px">
 			  	띄어쓰기로 여러 소제목을 추가할 수 있습니다.
 			</div>
 		</div>
 		<br>
-		<input type="submit" class="btn btn-primary" value="추가">
+		<input type="submit" class="btn btn-primary" style="margin-left: 10px" value="추가">
 	</form>
 	<br>
-	<button  class="btn btn-primary" onclick="location.href='/'">홈</button>
+	<button class="btn btn-primary" style="margin-left: 10px" onclick="location.href='/'">홈</button>
 </body>
 </html>

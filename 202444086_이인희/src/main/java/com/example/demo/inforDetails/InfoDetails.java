@@ -1,6 +1,6 @@
-package com.example.demo.information;
+package com.example.demo.inforDetails;
 
-import com.example.demo.inforDetails.InfoDetails;
+import com.example.demo.information.Information;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -12,17 +12,17 @@ import lombok.Data;
 
 @Entity
 @Data
-public class Information {
+public class InfoDetails {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-
-	@Column(length = 100)
-	private String title;
 	
 	@Column(columnDefinition = "TEXT")
-	private String subTitles;
+	private String subTitle;
+
+	@Column(columnDefinition = "TEXT")
+	private String content;
 
 	@OneToOne
-	private InfoDetails details;
+	private Information information;
 }

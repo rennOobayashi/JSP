@@ -16,7 +16,7 @@
 	    		<a href="/information/insertForm" class="btn btn-primary">등록하러가기</a>
 	    	</div>
     		<div style="margin: 15px; padding: 5px">
-	    		<a href="/information/viewList" class="btn btn-primary">등록된 문서 조회</a>
+	    		<a href="/viewList" class="btn btn-primary">등록된 문서 조회</a>
 	    	</div>
     </div>
   </body>

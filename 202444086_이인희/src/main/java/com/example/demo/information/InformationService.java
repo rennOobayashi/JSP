@@ -30,4 +30,8 @@ public class InformationService {
 	public void insert(Information info) {
 		iRepository.save(info);
 	}
+	
+	public void delete(int id) {
+		iRepository.deleteById(id);
+	}
 }
